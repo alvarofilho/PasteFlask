@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>PastFlask</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="{{ url_for('static', filename='app.css')}} ">
+</head>
+
+<body>
+  <div id="area">
+    <h1>PastFlask</h1>
+    <form id="pasteform" name="pasteform">
+      <label class="author">Author: {{poster.author}}</label>
+      <textarea id="form_content" name="form_content" rows="30" cols="60">{{poster.content}}</textarea>
+    </form>
+    </form>
+  </div>
+</body>
+
+</html>

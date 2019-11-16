@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>PastFlask</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="{{ url_for('static', filename='app.css')}} ">
+</head>
+
+<body>
+  <div id="area">
+    <h1>PastFlask</h1>
+    <form action="/" method="POST" id="pasteform" name="pasteform">
+      <table>
+        <tbody>
+          <tr>
+            <th><label for="poster">Poster:</label></th>
+            <td><input id="poster" name="poster" maxlength="30" required /></td>
+          </tr>
+          <tr>
+            <th><label for="form_content">Content:</label></th>
+            <td><textarea id="form_content" name="form_content" rows="30" cols="60" required></textarea></td>
+          </tr>
+        </tbody>
+      </table>
+      <input class="btn_submit" type="submit" value="Paste!" />
+    </form>
+  </div>
+</body>
+
+</html>
