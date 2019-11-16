@@ -15,5 +15,5 @@ flask run
 ```
 
 # Contributors
-* [Álvaro Filho#9328](http://github.com/alvarofilho)
+* [Álvaro Filho#0431](http://github.com/alvarofilho)
 * [A Liga Dos Programadores](https://github.com/Liga-dos-Programadores)
