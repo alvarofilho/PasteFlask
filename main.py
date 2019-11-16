@@ -22,16 +22,16 @@ def index():
         app.db.session.commit()
 
         return redirect(url_for('render_post', id_poster=id_poster))
-    else:
-        return render_template('index.html')
+
+    return render_template('index.html')
 
 
 @app.route('/p/<id_poster>')
 def render_post(id_poster: str):
     if (poster := Poster.query.filter_by(id_poster=id_poster).first()) is not None:
         return render_template('paste.html', poster=poster)
-    else:
-        return redirect(url_for('index'))
+
+    return redirect(url_for('index'))
 
 
 if __name__ == '__main__':
