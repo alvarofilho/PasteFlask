@@ -1,4 +1,4 @@
-# PastFlask
+# PasteFlask
 
 Experience with Flask and its tools
 
